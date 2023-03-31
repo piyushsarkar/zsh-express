@@ -37,14 +37,14 @@ curl -sS https://raw.githubusercontent.com/piyushsarkar/zsh-express/main/install
 
 1. Remove the `zsh-express` folder
 
-```sh
-rm -rf ~/.zsh/zsh-express
-```
+   ```sh
+   rm -rf ~/.zsh/zsh-express
+   ```
 
 2. Remove `source ~/.zsh/zsh-express/zsh-express.zsh` from `.zshrc`
 
-```sh
-echo "$(grep -v "source ~/.zsh/zsh-express/zsh-express.zsh" ~/.zshrc)" > ~/.zshrc
-```
+   ```sh
+   echo "$(grep -v "source ~/.zsh/zsh-express/zsh-express.zsh" ~/.zshrc)" > ~/.zshrc
+   ```
 
 3. Restart your terminal.
