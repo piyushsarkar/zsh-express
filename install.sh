@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-ZSH_SCRIPT_URL=https://raw.githubusercontent.com/piyushsarkar/zsh-express/main/install.sh
+ZSH_SCRIPT_URL=https://raw.githubusercontent.com/piyushsarkar/zsh-express/main/zsh-express.zsh
 SCRIPT_DIRECTORY=.zsh/zsh-express
 FILE_NAME=zsh-express.zsh
 SCRIPT_NAME="ZSH EXPRESS"
