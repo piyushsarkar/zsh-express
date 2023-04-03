@@ -6,7 +6,7 @@ zstyle :compinstall filename "$HOME/.completion.zsh"
 
 autoload -Uz compinit; compinit # The completion system of Zsh
 
-# history and browsing history config
+# history config
 HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000 # How many commands zsh will load to memory.
 SAVEHIST=50000 # How many commands history will save on file.
