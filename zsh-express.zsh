@@ -1,10 +1,9 @@
+autoload -Uz compinit; compinit # The completion system of Zsh
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'r:|[._-]=** r:|=**' '+r:|[._-]=** r:|=** l:|=*'
 zstyle ':completion:*' original true
 zstyle :compinstall filename "$HOME/.completion.zsh"
-
-autoload -Uz compinit; compinit # The completion system of Zsh
 
 # history config
 HISTFILE="$HOME/.zsh_history"
@@ -18,11 +17,12 @@ setopt INC_APPEND_HISTORY # adds commands as they are typed, not at shell exit (
 setopt HIST_EXPIRE_DUPS_FIRST # expire duplicates first
 setopt HIST_REDUCE_BLANKS # removes blank lines from history
 
+# Cycle through history based on characters already typed on the line
 autoload -U up-line-or-beginning-search
 autoload -U down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search # Up Key
+bindkey "^[[B" down-line-or-beginning-search # Down Key
 bindkey "$terminfo[kcuu1]" up-line-or-beginning-search
 bindkey "$terminfo[kcud1]" down-line-or-beginning-search
-bindkey -M vicmd 'k' up-line-or-beginning-search
-bindkey -M vicmd 'j' down-line-or-beginning-search

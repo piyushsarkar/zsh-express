@@ -2,8 +2,10 @@
 
 ## Features
 
-- Tab completion
-- History traversal using up and down arrow keys
+- Tab completion when typing from the middle of a word.
+- Cycle through history based on characters already typed on the line using up and down arrow keys
+- Avoid duplicates and blanks in zsh history.
+
 
 ## Installation
 
